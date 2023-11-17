@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --btn: rgb(229, 9, 20);
+  --btnHover: rgb(154, 22, 29);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  width: 428px;
+}
+
+.logo svg {
+  width: 148px;
+  height: 40px;
+}
+
+.navbar {
+  min-height: 48px;
+  padding: 24px 189px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 290%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("/assets/hero-img.jpg");
+}
+
+button#lang {
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: 0.5px solid white;
+  height: 32px;
+  border-radius: 4px;
+  padding: 4px 16px;
+
+  font-size: 16px;
+}
+#sign-in {
+  background-color: var(--btn);
+  color: white;
+  outline: none;
+  font-size: 14px;
+  border: transparent;
+  margin-left: 24px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+#sign-in a {
+  padding: 4px 16px;
+  text-decoration: none;
+  color: white;
+  text-wrap: nowrap;
+}
+.text-conatiner {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 152px 180px;
+}
+.text-conatiner #form {
+  text-align: center;
+}
+.text-conatiner h1,
+p {
+  color: white;
+}
+.text-conatiner h1 {
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.text-conatiner > p {
+  font-size: 1.4rem;
+  margin-top: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+#form form {
+
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#form p{text-align: center;}
+
+#form form input {
+  width: 368px;
+  height: 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 4px;
+  background-color: transparent;
+border: .5px solid rgb(116, 116, 116); 
+}
+
+#form form input:focus{outline: 2px solid rgb(255, 255, 255);
+  
+
+}
+
+
+#form input:focus::placeholder {
+ font-size: 12px;
+ 
+ transform: translateY(2rem);
+}
+
+#form form input::placeholder {
+  color: rgb(154, 154, 154);
+  font-size:16px;
+  font-weight: 500;
+}
+
+
+
+#form form button {
+  padding: 12px 24px;
+  margin-left: 8px;
+  font-size: 24px;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 700;
+  border: transparent;
+  background-color: var(--btn);
+  color: white;
+}
+
+#form-fields{display: flex;
+align-items: center;}
+
+#form form button:hover {
+  background-color: var(--btnHover);
+}
+
+.text-conatiner #form {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.text-conatiner #form p {
+  font-size: 1.15rem;
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+}
+#sign-in:hover {
+  background-color: var(--btnHover);
+}
+
+form button{display: flex;
+gap:.5rem;
+}
+
+main .divider{background-color:rgb(35, 35,35);
+width:100%;
+height: 8px;
+}
+main{background-color: black;}
+
+
+/* 
+
+#dropdown{appearance: none;
+border: none;
+outline: none;
+background-color: unset;}
+ */
+
+
+
+
+ /* //modifying the input bo */
+ 
+
+.input-container {
+  position: relative;
+ 
+}
+
+.input-field {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  color: rgb(255, 255, 255);
+}
+
+.input-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80%);
+  left: 10px;
+  font-size: 16px;
+  color: rgb(190, 190, 190);
+  transition: 0.3s;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.input-field:focus + .input-label, .input-field:valid + input {
+  top: 22%;
+  font-size: 11px;
+  color: rgb(190, 190, 190);
+}
+.card .col{max-width: 668px;}
+.card{padding: 4.5rem 8rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card img{max-width: 668px;}
+
+
+.card desc{width: 50%;}
+.card .video-img-cont{width: 40%;
+
+position: relative;} 
+.card h2{font-size: 3rem;
+font-weight: 900;
+}
+
+.card p{font-size: 1.25rem;
+font-weight: 400;
+}
+
+.card .video-img-cont .image{z-index: 20;
+position: relative;
+top: 0;
+left: -122px;
+width: 668px;
+}
+.card .video-img-cont #video1{z-index: 10;
+position: absolute;
+top: 20%;
+left: -40px;}
+
+#video2{
+ 
+  position: absolute;
+  width: 400px;
+left: 0;
+z-index: 10;
+top: 25px;
+}
+
+
+
+.img-with-download{position: relative;}
+.download-progress{position: absolute;
+  display: flex;
+  align-items: center;
+
+  background: #000;
+border: 1.6px solid rgba(128, 128, 128, 0.7);
+border-radius: 12px;
+padding: 8px 12px;
+bottom:0;
+left: 20%;}
+.download-progress .thumbnail {margin-right: 16px;}
+.text{margin: 4.8px 0;}
+.thumbnail img{max-width: 57px;}
+.download-progress .text p:first-child{font-size: 16px;
+font-weight: 500;}
+
+.download-progress .text p:last-child{font-size: 14px;
+font-weight: 400;
+color: rgb(0, 113, 235);}
+
+
+/* styling the accordion
+ */
+
+
+ .accordion-cont{padding: 72px 159px;
+max-width: 100vw;
+display: grid;
+place-items: center;}
+ 
+.accordion {
+  max-width: 1400px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 24px;
+  margin-bottom:8px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  font-weight:400;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .accordion #icon{transition: all ease-in-out .2s;}
+ */
+.accordion.active #icon{
+  transform: rotate(45deg);
+}
+
+.active, .accordion:hover {
+  background-color: #333;
+}
+
+
+
+.panel {
+ max-width: 1400px;
+  background-color: #333;
+  color:#fff;
+  max-height: 0;
+  font-size: 24px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  text-align: left;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+
+
+
+footer{padding: 72px 140px;
+background: #000;
+display: grid;
+justify-content: center;
+grid-template-columns:repeat(3,400px);
+}
+footer ul li,a{color: rgba(255,255,255,0.7);
+padding: 5px 0;
+margin: 5px 0;
+}
+footer ul li{list-style-type: none;}
